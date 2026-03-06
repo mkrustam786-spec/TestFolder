@@ -7,7 +7,7 @@ export const Testcomponent = ()=>{
        dispatch(getUser("test"))
     }
     return (<div>
-        <div>hello </div>
+        <div>hello hhh </div>
        <button onClick={handler}>click</button>
         </div>
     )
