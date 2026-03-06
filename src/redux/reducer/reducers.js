@@ -1,10 +1,10 @@
 const initialState = {
 user:[]
 }
-export const getUser =(state=initialState,action)=>{
+export const inputReducer =(state=initialState,action)=>{
     switch(action.type)
     {
-        case "hello":
+        case "GET_USER":
             return {...state,user:action.payload}
         default:
             return state

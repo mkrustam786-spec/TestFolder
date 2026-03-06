@@ -1,9 +1,10 @@
 
 // import { SumComponent } from './Components/SumComponent';
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import {Users} from "./Components/Users";
 // import { QueryComponent } from "./Components/QueryComponent";
-import { Testcomponent } from "./Components/test"
+import {GetInputComponent} from "./Components/GetInputComponeent";
+import { InputComponent } from "./Components/InputComponent";
 
 function App() {
 //    
@@ -12,13 +13,14 @@ function App() {
 // },[Number1,Number2])
   return (
     <>
-    <Testcomponent/>
+    
     {/* <SumComponent/> */}
   <BrowserRouter>
       <Routes>
-             {/* <Route path ="/" element={<h1></h1>}/> */}
+             <Route path ="*" element={<InputComponent/>}/>
               {/* <Route path ="/profile/:name/:Roll" element={<Users/>}/> */}
               {/* <Route path ="/profile" element={<QueryComponent/>}/> */}
+              <Route path ="/getinput" element={<GetInputComponent/>}/> 
       </Routes>
     </BrowserRouter>
        

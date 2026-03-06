@@ -1,4 +1,6 @@
-export const obj={
-    type:"hello",
-    payload:"world"
+export const inputAction = (data)=>{
+    return {
+        type:"GET_USER",
+        payload:data
+    }
 }
