@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import {Users} from "./Components/Users";
 // import { QueryComponent } from "./Components/QueryComponent";
 import {GetInputComponent} from "./Components/GetInputComponeent";
-import { InputComponent } from "./Components/InputComponent";
+// import { InputComponent } from "./Components/InputComponent";
+import { UserComponent } from "./Components/UserComponent";
 
 function App() {
 //    
@@ -17,10 +18,12 @@ function App() {
     {/* <SumComponent/> */}
   <BrowserRouter>
       <Routes>
-             <Route path ="*" element={<InputComponent/>}/>
+             {/* <Route path ="*" element={<InputComponent/>}/> */}
               {/* <Route path ="/profile/:name/:Roll" element={<Users/>}/> */}
               {/* <Route path ="/profile" element={<QueryComponent/>}/> */}
               <Route path ="/getinput" element={<GetInputComponent/>}/> 
+              <Route path ="*" element={<UserComponent/>}/> 
+               
       </Routes>
     </BrowserRouter>
        
